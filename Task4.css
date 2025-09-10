@@ -1,0 +1,52 @@
+/* 🎨 ძირითადი კონტეინერი */
+.task4-container {
+  display: flex;
+  flex-wrap: wrap; /* მობილურზე ფორმები ქვემოთ ჩამოვა */
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+/* ფორმის ბარათები */
+.form-card {
+  flex: 1 1 300px; /* მინიმუმ 300px, შემდეგ იზრდება */
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* input ველები */
+.form-card input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* ღილაკი */
+.form-card button {
+  width: 100%;
+  padding: 10px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-card button:hover {
+  background: #3730a3;
+}
+
+/* 📱 მობილურისთვის */
+@media (max-width: 600px) {
+  .task4-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
